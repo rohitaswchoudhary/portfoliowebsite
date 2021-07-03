@@ -80,36 +80,25 @@
 
     <section class="section--1">
         <div class="skills--container">
-            <h4>Skill that i ownes</h4>
+            <h4>More about me</h4>
+
+            {% for skill in skillsWithBody %}
 
             <div class="skills--wrapper">
-                <h5>python</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed ex quidem aspernatur,
-                    architecto eum!</p>
+                <h5>{{skill.title}}</h5>
+                <p>{{skill.body}}</p>
             </div>
-            <div class="skills--wrapper">
-                <h5>Django</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed ex quidem aspernatur,
-                    architecto eum!</p>
-            </div>
-            <div class="skills--wrapper">
-                <h5>Webdevelopment</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed ex quidem aspernatur,
-                    architecto eum!</p>
-            </div>
+
+            {% endfor %}
+       
 
             <h5 style="font-weight: 800;">Other skills</h5>
-
             <div class="other--skills--wrapper">
+                {% for skill in skillsWithoutBody %}
                 <div class="skill--tag">
-                    <span>AWS</span>
+                    <span>{{skill.title}}</span>
                 </div>
-                <div class="skill--tag">
-                    <span>NUMPY</span>
-                </div>
-                <div class="skill--tag">
-                    <span>JAVASCRIPTS</span>
-                </div>
+                {% endfor %}
             </div>
 
         </div>
