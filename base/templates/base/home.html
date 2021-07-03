@@ -52,7 +52,7 @@
         <div class="projects--wrapper">
             {% for project in projects %}
             <div class="project--column">
-                <img class="project--thumbnail" src="{% static 'images/goku2.jpg' %}">
+                <img class="project--thumbnail" src="{{project.thumbnail.url}}">
                 <div class="project--body">
                     <h4>{{project.title}}</h4>
                 </div>
