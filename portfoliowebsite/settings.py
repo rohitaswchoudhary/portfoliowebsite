@@ -41,6 +41,8 @@ INSTALLED_APPS = [
 
     'base.apps.BaseConfig',
 
+    'ckeditor',
+
     'django_cleanup.apps.CleanupConfig',
 ]
 
