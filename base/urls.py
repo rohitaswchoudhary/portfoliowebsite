@@ -10,5 +10,9 @@ urlpatterns = [
 
     path('edit-project/<str:pk>/', views.editProject, name="edit-project"),
 
+
+    path('inbox/', views.inboxPage, name="inbox"),
+
+    path('message/<str:pk>/', views.messagePage, name="message"),
     
 ]
