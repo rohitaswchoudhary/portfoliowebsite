@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
 
     'ckeditor',
+    'ckeditor_uploader',
 
     'django_cleanup.apps.CleanupConfig',
 ]
@@ -112,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE =  'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -134,6 +135,9 @@ STATICFILES_DIRS = [
  
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+
+
+CKEDITOR_UPLOAD_PATH = 'uploades/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
